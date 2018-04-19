@@ -1,0 +1,256 @@
+@import '_common';
+@import '_config';
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html,
+body,
+.wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    header {
+        width: 100%;
+        height: pxTorem(90px);
+        .top {
+            width: 100%;
+            height: pxTorem(45px);
+            display: flex;
+            padding: 0 pxTorem(10px);
+            box-sizing: border-box;
+            background: $header-bg;
+            justify-content: space-between;
+            align-items: center;
+            img {
+                width: pxTorem(30px);
+                height: auto;
+            }
+            i {
+                color: #999896;
+                font-size: pxTorem(16px);
+            }
+            p {
+                width: 60%;
+                text-align: center;
+                display: flex;
+                a {
+                    flex: 1;
+                    color: #000;
+                    font-size: pxTorem(16px);
+                    padding: 0 .5rem;
+                    display: inline-block;
+                    height: pxTorem(40px);
+                    line-height: pxTorem(40px);
+                }
+                .on {
+                    border-bottom: 5px solid #999;
+                }
+            }
+        }
+        .search {
+            width: 100%;
+            display: flex;
+            height: pxTorem(45px);
+            padding: 0 pxTorem(10px);
+            box-sizing: border-box;
+            align-items: center;
+            justify-content: space-between;
+            p {
+                width: 80%;
+                display: flex;
+                height: pxTorem(35px);
+                border: 1px solid #ccc;
+                border-radius: pxTorem(10px);
+                line-height: pxTorem(35px);
+                padding-left: pxTorem(20px);
+                i {
+                    color: #999896;
+                }
+                input {
+                    height: pxTorem(35px);
+                    border: 0;
+                    outline: 0;
+                }
+            }
+            >i {
+                width: pxTorem(30px);
+                height: pxTorem(30px);
+                text-align: center;
+                line-height: pxTorem(30px);
+                border: 1px solid #ccc;
+                color: #999896;
+                border-radius: pxTorem(10px);
+            }
+        }
+    }
+    section {
+        width: 100%;
+        overflow: hidden;
+        flex: 1;
+        overflow-y: scroll;
+        .bookrack {
+            width: 100%;
+            .books {
+                width: 100%;
+                li {
+                    display: flex;
+                    dl {
+                        width: 33.3%;
+                        text-align: center;
+                        dt {
+                            width: 100%;
+                            text-align: center;
+                            img {
+                                padding: pxTorem(10px);
+                                width: pxTorem(100px);
+                                height: auto;
+                            }
+                        }
+                        dd {
+                            font-size: pxTorem(14px);
+                        }
+                    }
+                }
+            }
+        }
+        .bookcity {
+            width: 100%;
+            .banner {
+                width: 100%;
+                .swiper-slide {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+            .type {
+                width: 100%;
+                height: pxTorem(80px);
+                display: flex;
+                border-bottom: pxTorem(3px) solid #ccc;
+                li {
+                    flex: 1;
+                    height: 100%;
+                    width: 20%;
+                    text-align: center;
+                    font-size: pxTorem(14px);
+                    img {
+                        width: pxTorem(30px);
+                        height: auto;
+                        padding: pxTorem(8px);
+                    }
+                    a {
+                        color: #666;
+                        display: block;
+                    }
+                }
+            }
+            .hotweek {
+                width: 100%;
+                h1 {
+                    width: 100%;
+                    height: pxTorem(45px);
+                    line-height: pxTorem(45px);
+                    border-left: pxTorem(8px) solid orange;
+                    border-bottom: pxTorem(10px) solid #F0EFED;
+                }
+                li {
+                    display: flex;
+                    dl {
+                        width: 33.3%;
+                        text-align: center;
+                        dt {
+                            width: 100%;
+                            text-align: center;
+                            img {
+                                padding: pxTorem(10px);
+                                width: pxTorem(100px);
+                                height: auto;
+                            }
+                        }
+                        dd {
+                            font-size: pxTorem(14px);
+                        }
+                    }
+                }
+            }
+            .recommended {
+                width: 100%;
+                h1 {
+                    width: 100%;
+                    height: pxTorem(45px);
+                    line-height: pxTorem(45px);
+                    border-left: pxTorem(8px) solid orange;
+                    border-bottom: pxTorem(10px) solid #F0EFED;
+                    i {
+                        width: pxTorem(30px);
+                        height: pxTorem(30px);
+                        background: #0EAB78;
+                        color: #fff;
+                        font-size: 10px;
+                    }
+                }
+                .story {
+                    width: 100%;
+                    li {
+                        width: 100%;
+                        height: auto;
+                        border-bottom: 1px solid #ccc;
+                        &:first-child {
+                            dl {
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                dt {
+                                    width: pxTorem(120px);
+                                    padding: pxTorem(10px);
+                                    img {
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                                dd {
+                                    flex: 1;
+                                    margin-left: pxTorem(10px);
+                                    b {
+                                        font-size: pxTorem(16px);
+                                    }
+                                    a {
+                                        font-size: pxTorem(14px);
+                                        display: block;
+                                        color: #999896;
+                                    }
+                                    p {
+                                        font-size: pxTorem(14px);
+                                        color: #999;
+                                    }
+                                }
+                            }
+                        }
+                        font {
+                            color: red;
+                            font-weight: 800;
+                            line-height: pxTorem(30px);
+                        }
+                        a {
+                            font-size: pxTorem(14px);
+                            color: #666;
+                            line-height: pxTorem(30px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
